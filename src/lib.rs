@@ -18,6 +18,6 @@ pub fn sieve_of_eratosthenes(max: usize) -> Vec<bool> {
 
 pub fn prime_count(max: usize) -> usize {
     let prime_mask = sieve_of_eratosthenes(max);
-    let count: usize = prime_mask.into_iter().map(|x| if x {1usize} else {0usize}).sum();
+    let count: usize = prime_mask.into_iter().map(|x| x as usize).sum();
     count
 }
