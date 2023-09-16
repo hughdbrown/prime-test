@@ -1,7 +1,7 @@
-= Purpose
+# Purpose
 Benchmark time required to find primes below 100 million.
 
-= Results
+# Results
 Finding all of the primes below 100 million and counting them takes less than a second.
 ```
 ❯ cargo build --release
